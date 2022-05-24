@@ -3,9 +3,9 @@ global start
 section .text
 
 start:                  
-    mov  dx, name           ;String name dimasukkan ke dx
-    call printString        ;Menjalankan fungsi printString
-    call getAnswer          ;Menjalankan fungsi getAnswer
+    mov  dx, name           ;string name dimasukkan ke dx
+    call printString        ;menjalankan fungsi printString
+    call getAnswer          ;menjalankan fungsi getAnswer
     cmp  al, ' '            ;mengecek apakah al = ' ' (karakter apapun) -> fungsinya berhubungan dengan je
     je   Time               ;je(Jump if equal), jika al sama dengan ' ' maka akan loncat ke fungsi Time   
 
@@ -34,7 +34,7 @@ done:                       ;fungsi untuk menyelesaikan program
     int  0x21               ;interrupt
 
 printString:
-    mov  ah, 9              ;interrupt untuk output string
+    mov  ah, 9              ;interrupt untuk output/print string
     int  0x21               ;interrupt
     ret                     ;ret(return), kembali ke letak fungsi 'call printString' yang sebelumnya menjalankan program ini 
 
@@ -43,6 +43,12 @@ getAnswer:
     mov  ah, 0x0a           ;fungsi untuk input string
     int  0x21               ;interrupt
     mov  al, [answer+2]     ;[answer+2] dimasukkan ke al
+                            ;kenapa +2? karena mengambil posisi ke-(1+2) atau karater pertama buffer
+                            ;jika +3 maka, akan mengambil karakter ke dua setelah input, misalnya
+                            ;am akan diambil m sehingga outputnya akan menjadi selamat sore (nama)
+                            ;begitu pula +4 akan mengambil karakter ke tiga setelah input, misalnya
+                            ;pma akan diambil karakter 'a' sehingga outputnya akan menjadi selamat pagi (nama)
+                            ;dan seterusnya
     ret                     ;ret(return), kembali ke letak fungsi 'call getAnswer' yang sebelumnya menjalankan program ini
 
 name    db "Ur name?     $"                 ;string name
