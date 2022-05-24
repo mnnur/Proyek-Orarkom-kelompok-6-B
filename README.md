@@ -30,20 +30,20 @@ Program memberi salam ini menggunakan bahasa assembly dan dosbox untuk menjalank
 <!-- Gambar Output Program -->
 ## Gambar Output Program
 
-    1. Mengcompile program
+## Mengcompile program
 ![img1](/img/img1.png)
 
-    2. Menjalankan program dan menginput nama
+## Menjalankan program dan menginput nama
 ![img2](/img/img2.png)
 
-    3. Menginput am
+## Menginput am
 ![img3](/img/img3.png)
 
-    4. Hasil akhir dari menjalankan program pertama  (Selamat Pagi)
+## Hasil akhir dari menjalankan program pertama  (Selamat pagi)
 ![img4](/img/img4.png)
 
-    5. Menjalankan program, menginput nama, dan menginput pm
+## Menjalankan program, menginput nama, dan menginput pm
 ![img5](/img/img5.png)
 
-    6. Hasil akhir dari menjalankan program kedua (Selamat Sore)
+## Hasil akhir dari menjalankan program kedua (Selamat sore)
 ![img6](/img/img6.png)
