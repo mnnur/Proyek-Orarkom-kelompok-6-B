@@ -1,6 +1,6 @@
-org 0x100
-global start
-section .text
+org 0x100                   ;awalan supaya programnya bisa dijalanin
+global start                ;awalan supaya programnya bisa dijalanin
+section .text               ;nandain section untuk menyimpan kodingan (.text)
 
 start:                  
     mov  dx, name           ;string name dimasukkan ke dx
