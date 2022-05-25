@@ -23,6 +23,9 @@
 | 140810210058  | Muhammad Naufal Nur Ramadhan   |
 
 <!-- Penjelasan Program -->
+## Penjelasan Program
+
+Program memberi salam ini menggunakan bahasa assembly dan dosbox untuk menjalankan programnya. Program ini dapat memberi salam kepada penginput berupa selamat pagi atau selamat sore (nama yang diinput oleh pengguna)
 
 <!-- Gambar Output Program -->
 ## Gambar Output Program
